@@ -30,6 +30,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
         div {
           color: inherit;
           padding: 2rem;
+          cursor: pointer;
         }
       `}</style>
     </div>
