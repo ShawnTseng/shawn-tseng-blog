@@ -2,8 +2,7 @@ import React from 'react';
 import { GetServerSideProps } from 'next';
 import ReactMarkdown from 'react-markdown';
 import Router from 'next/router';
-import Layout from '../../components/Layout';
-import { PostProps } from '../../components/Post';
+import { PostProps } from '../../src/app/components/Post';
 import prisma from '../../lib/prisma';
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
@@ -38,7 +37,7 @@ const Post: React.FC<PostProps> = (props) => {
   }
 
   return (
-    <Layout>
+    <>
       <div>
         <h2>{title}</h2>
         <p>By Shawn TSENG</p>
@@ -71,7 +70,7 @@ const Post: React.FC<PostProps> = (props) => {
           margin-left: 1rem;
         }
       `}</style>
-    </Layout>
+    </>
   );
 };
 

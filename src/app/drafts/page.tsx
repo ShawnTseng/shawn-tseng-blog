@@ -1,7 +1,6 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
-import Layout from '../components/Layout';
-import Post, { PostProps } from '../components/Post';
+import Post, { PostProps } from '../src/app/components/Post';
 import prisma from '../lib/prisma';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
@@ -21,7 +20,7 @@ type Props = {
 
 const Drafts: React.FC<Props> = (props) => {
     return (
-        <Layout>
+        <>
             <div className="page">
                 <h1>My Drafts</h1>
                 <main>
@@ -46,7 +45,7 @@ const Drafts: React.FC<Props> = (props) => {
           margin-top: 2rem;
         }
       `}</style>
-        </Layout>
+        </>
     );
 };
 
