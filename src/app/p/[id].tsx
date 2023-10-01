@@ -2,8 +2,8 @@ import React from 'react';
 import { GetServerSideProps } from 'next';
 import ReactMarkdown from 'react-markdown';
 import Router from 'next/router';
-import { PostProps } from '../../src/app/components/Post';
-import prisma from '../../lib/prisma';
+import { PostProps } from '../components/Post';
+import prisma from '../../../lib/prisma';
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const post = await prisma.post.findUnique({
