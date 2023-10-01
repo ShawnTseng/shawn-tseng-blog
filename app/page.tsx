@@ -1,4 +1,4 @@
-import Post from "./components/Post";
+import Post from "./_components/Post";
 import prisma from "../lib/prisma";
 
 export default async function Home() {
