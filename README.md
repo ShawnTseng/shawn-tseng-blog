@@ -1,4 +1,4 @@
-# 初始化
+****# 初始化
 
 ## Git clone 完後需連結vercel、取得環境變數、並加入github及nextauth url的設定
 1. npm install
@@ -19,8 +19,8 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 ## 待辦
 - [X] 變更專案名稱
 - [X] 移除登入設定
-- [ ] 設計另一種方式新增文章
-  - [ ] 直接抓取專案中的Markdown輸出 https://nextjs.org/learn/basics/dynamic-routes
+- [X] 設計另一種方式新增文章
+  - [X] 直接抓取專案中的Markdown輸出 https://nextjs.org/learn/basics/dynamic-routes
 - [ ] 按下 Link 後的 loading 畫面
 - [ ] 確認功能列表
 - [ ] 學習 AWS Amplify，暫時使用 Vercel
