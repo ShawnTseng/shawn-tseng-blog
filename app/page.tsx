@@ -7,15 +7,14 @@ export default async function Home() {
   return (
     <main>
       {allPostsData && allPostsData.map(({ id, date, title }) => (
-        <li key={id}>
+        <article className="m-4" key={id}>
           <Link href={`/posts/${id}`}>
-            {title}
+            <h1>{title}</h1>
           </Link>
-          <br />
           <small>
             <Date dateString={date} />
           </small>
-        </li>
+        </article>
       ))}
     </main>
   )

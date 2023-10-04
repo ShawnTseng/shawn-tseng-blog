@@ -15,16 +15,14 @@ export default async function Post({ params }: { params: { id: string } }) {
     const id = params.id;
     const postData = await getPostData(id);
     return <>
-        <Link href='/'>Back</Link>
+        <Link href='/' className="m-4">Back</Link>
         {postData ?
             <>
-                {postData.title}
-                <br />
-                {postData.id}
-                <br />
-                <Date dateString={postData.date} />
-                <br />
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <h1 className="m-4">{postData.title}</h1>
+                <small className="m-4">
+                    <Date dateString={postData.date} />
+                </small>
+                <article className="m-4" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </> :
             <></>
         }
