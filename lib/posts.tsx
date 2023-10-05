@@ -59,5 +59,12 @@ export interface IPost {
     id: string;
     title: string;
     date: string;
+    tags: Array<Tag>;
     contentHtml: string;
+}
+
+enum Tag {
+    BTC,
+    Bitcoin,
+    Blockchain
 }

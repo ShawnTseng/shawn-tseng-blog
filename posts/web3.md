@@ -1,6 +1,7 @@
 ---
 title: '學習 Web3'
 date: '2023-10-04'
+tags: ['BTC', 'Bitcoin', 'Blockchain']
 ---
 
 # 學習 Web3 的方式

@@ -14,18 +14,23 @@ export const generateMetadata = async ({ params }: { params: { id: string } }): 
 
 export default async function Post({ params }: { params: { id: string } }) {
     const id = params.id;
-    const postData2 = await getPostData(id);
+    const postData = await getPostData(id);
     return <>
         <Link href='/' className="m-4">Back</Link>
-        {postData2 ?
+        {postData ?
             <>
-                <h1 className="m-4">{postData2.title}</h1>
+                <h1 className="m-4">{postData.title}</h1>
+                <div className="m-4">
+                    {postData.tags.map(tag => (
+                        <span className="m-2 p-2 rounded-sm bg-slate-300 cursor-pointer">{tag}</span>
+                    ))}
+                </div>
                 <small className="m-4">
-                    <Date dateString={postData2.date} />
+                    <Date dateString={postData.date} />
                 </small>
                 <article className="m-4">
                     <Markdown linkTarget="_blank">
-                        {postData2.contentHtml}
+                        {postData.contentHtml}
                     </Markdown>
                 </article>
             </> :
