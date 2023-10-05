@@ -2,6 +2,7 @@ import { getPostData } from "@/lib/posts";
 import Date from '../../_components/Date';
 import { Metadata } from "next";
 import Link from "next/link";
+import Markdown from 'react-markdown';
 
 export const generateMetadata = async ({ params }: { params: { id: string } }): Promise<Metadata> => {
     const id = params.id;
@@ -13,16 +14,20 @@ export const generateMetadata = async ({ params }: { params: { id: string } }): 
 
 export default async function Post({ params }: { params: { id: string } }) {
     const id = params.id;
-    const postData = await getPostData(id);
+    const postData2 = await getPostData(id);
     return <>
         <Link href='/' className="m-4">Back</Link>
-        {postData ?
+        {postData2 ?
             <>
-                <h1 className="m-4">{postData.title}</h1>
+                <h1 className="m-4">{postData2.title}</h1>
                 <small className="m-4">
-                    <Date dateString={postData.date} />
+                    <Date dateString={postData2.date} />
                 </small>
-                <article className="m-4" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <article className="m-4">
+                    <Markdown linkTarget="_blank">
+                        {postData2.contentHtml}
+                    </Markdown>
+                </article>
             </> :
             <></>
         }
