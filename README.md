@@ -21,6 +21,15 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 - [X] 移除登入設定
 - [X] 設計另一種方式新增文章
   - [X] 直接抓取專案中的Markdown輸出 https://nextjs.org/learn/basics/dynamic-routes
+
+- [ ] 標籤移到最後
+- [ ] 作者放在文末
+- [ ] 限縮電腦寬度(參考medium)
+- [ ] a link 顯示不同顏色
+- [ ] 文內的連結盡量連結自己的文章
+- [ ] 在文末附上外部連結
+
+- [ ] 每寫三篇文章 Review 功能
 - [ ] 按下 Link 後的 loading 畫面
 - [ ] 確認功能列表
 - [ ] 學習 AWS Amplify，暫時使用 Vercel
@@ -28,16 +37,16 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 ## 功能列表
 - [X] 顯示所有文章
 - [X] 閱讀單篇文章
-- [ ] 新增文章
-    - [ ] 發至草稿
-    - [ ] 直接發佈
-    - [ ] 捨棄草稿
-- [ ] 草稿轉發佈
-- [ ] 刪除草稿
+- [X] 新增文章
 - [ ] 標籤功能
     - [ ] 增刪修標籤
     - [ ] 標籤過濾文章
 - [ ] 留言功能
+
+
+## 文章主題
+- CoinMarketCap
+- 
 
 ## 學習
 - PostgreSQL
