@@ -21,9 +21,11 @@ export default async function Post({ params }: { params: { id: string } }) {
             <>
                 <h1 className="m-4">{postData.title}</h1>
                 <div className="m-4">
-                    {postData.tags.map(tag => (
+                    {postData.tags ? postData.tags.map(tag => (
                         <span className="m-2 p-2 rounded-sm bg-slate-300 cursor-pointer">{tag}</span>
-                    ))}
+                    )) :
+                        <></>
+                    }
                 </div>
                 <small className="m-4">
                     <Date dateString={postData.date} />
