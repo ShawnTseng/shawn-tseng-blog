@@ -47,7 +47,7 @@ export default function RootLayout({
                 ${poppinsMedium.className}`
             }>
                 <Navigation />
-                <div className="px-8">{children}</div>
+                <div className="p-8">{children}</div>
             </body>
         </html>
     )
