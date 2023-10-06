@@ -16,11 +16,19 @@
         @apply my-4 font-bold;
     }
     ul, ol {
+        @apply list-inside m-4 list-disc;
+    }
+    li {        
         @apply list-inside;
-        list-style: revert;
-        @apply ml-2;
     }
     a {
         @apply text-sky-600;
+    }
+    code {
+        @apply p-1;
+        @apply bg-sky-100;
+    }
+    p {
+        @apply py-4;
     }
 }

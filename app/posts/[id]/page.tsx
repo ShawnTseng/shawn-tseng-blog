@@ -33,7 +33,7 @@ export default async function Post({ params }: { params: { id: string } }) {
     }
 
     return <div className="flex justify-center">
-        <div className="max-w-7xl">
+        <div className="max-w-7xl mb-96">
             <Link href='/' className="m-4">Back</Link>
             {postData ?
                 <>
