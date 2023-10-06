@@ -51,6 +51,7 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 - CoinMarketCap
 - Bitcoin
 - Ethereum
+- Ethereum NFT
 
 ## 學習
 - PostgreSQL

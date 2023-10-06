@@ -1,7 +1,7 @@
 ---
 title: '進入 Web3 的第一步應該做什麼?'
 date: '2023-10-06'
-tags: ['Web3', 'CoinMarketCap']
+tags: ['Web3', 'CoinMarketCap', '非技術']
 ---
 
 - [Web3](#web3)
