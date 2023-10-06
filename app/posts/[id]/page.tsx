@@ -44,7 +44,7 @@ export default async function Post({ params }: { params: { id: string } }) {
                     <article className="my-4">
                         <Markdown
                             components={{ h1: h1WithId, h2: h2WithId, h3: h3WithId }}
-                            rehypePlugins={[rehypeRaw]}>
+                            rehypePlugins={[rehypeRaw as any]}>
                             {postData.contentHtml}
                         </Markdown>
                     </article>
