@@ -24,8 +24,8 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 
 - [ ] 標籤移到最後
 - [ ] 作者放在文末
-- [ ] 限縮電腦寬度(參考medium)
-- [ ] a link 顯示不同顏色
+- [X] 限縮電腦寬度(參考medium)
+- [X] a link 顯示不同顏色
 - [ ] 文內的連結盡量連結自己的文章
 - [ ] 在文末附上外部連結
 
