@@ -1,6 +1,7 @@
 ---
 title: '進入 Web3 的第一步應該做什麼?'
 date: '2023-10-06'
+tags: ['Web3', 'CoinMarketCap']
 ---
 
 - [Web3](#web3)
@@ -35,7 +36,7 @@ date: '2023-10-06'
 
 <details>
   <summary>1. CoinMarketCap</summary>
-  CoinMarketCap 的說明
+  <!-- TODO:CoinMarketCap 的說明 -->
 </details>
 
 

@@ -22,8 +22,8 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
 - [X] 設計另一種方式新增文章
   - [X] 直接抓取專案中的Markdown輸出 https://nextjs.org/learn/basics/dynamic-routes
 
-- [ ] 標籤移到最後
-- [ ] 作者放在文末
+- [X] 標籤移到最後
+- [X] 作者放在文末
 - [X] 限縮電腦寬度(參考medium)
 - [X] a link 顯示不同顏色
 - [ ] 文內的連結盡量連結自己的文章
@@ -42,11 +42,15 @@ NEXTAUTH_URL=http://localhost:3000/api/auth
     - [ ] 增刪修標籤
     - [ ] 標籤過濾文章
 - [ ] 留言功能
+- [ ] 瀏覽次數記錄功能
+- [ ] 分享功能
+- [ ] 推播功能
 
 
 ## 文章主題
 - CoinMarketCap
-- 
+- Bitcoin
+- Ethereum
 
 ## 學習
 - PostgreSQL
