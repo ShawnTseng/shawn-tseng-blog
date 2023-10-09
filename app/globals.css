@@ -16,7 +16,13 @@
         @apply my-4 font-bold;
     }
     ul, ol {
-        @apply list-inside m-4 list-disc;
+        @apply list-inside m-4;
+    }
+    ul {
+        @apply list-disc;
+    }
+    ol {
+        @apply list-decimal;
     }
     li {        
         @apply list-inside;

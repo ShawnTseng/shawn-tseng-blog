@@ -66,5 +66,7 @@ export interface IPost {
 enum Tag {
     Web3,
     CoinMarketCap,
-    非技術
+    非技術,
+    Bitcoin,
+    比特幣
 }
